@@ -1,0 +1,319 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1, p {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Karla,sans-serif;
+  color: #718096;
+  line-height: 21px;
+}
+
+input {
+  padding: 10px;
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.aside {
+  background-color: #062863;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 24px 24px 28px;
+  transition: all 250ms linear;
+}
+
+/* .aside:hover {
+  transform: rotateX(70);
+  width: 700px;
+} */
+
+.display-none {
+  display: none;
+}
+
+/* .shrink-in {
+  width: 90px;
+} */
+
+.current {
+  background: white;
+  color: #062863;
+  border-radius: 10px 10px 10px 0px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.icon {
+  width: 24px;
+  margin-right: 40px;
+}
+
+.top {
+  width: 192px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.top > .icon {
+  width: 24px;
+  height: 15px;
+}
+
+.logo {
+  width: 128px;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  margin-bottom: auto;
+}
+
+/* .temp {
+  display: none;
+} */
+
+/* MAIN-SECTION */
+
+.main-section {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}
+
+header {
+  padding: 14px 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-content {
+  position: relative;
+}
+
+.header-content > h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.header-content > a {
+  position: absolute;
+  top: -5px;
+  right: 0px;
+}
+
+.amount-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80px;
+  margin-top: 20px;
+  padding-left: 20px;
+  border: 1px solid rgba(140, 140, 140, 0.5);
+  border-radius: 10px 10px 10px 2px;
+}
+
+.amount {
+  color: #062863;;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 48px 0 48px;
+}
+
+.bottom-section img {
+  margin-right: 10px;
+}
+
+.bottom-section ul {
+  display: flex;
+  margin: 10px 0;
+}
+
+.bottom-section li {
+  margin-right: 10px;
+}
+.btn {
+  width: 162px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 10px 10px 10px 0px;
+  border: none;
+}
+
+.blue {
+  background: #CCF0FE;
+  color: #2655A9;
+}
+
+.blue:hover, .blue:focus {
+  background: #ccf0fe93;
+  color: #2656a981;
+}
+
+.pink {
+  background: #FFEAF5;
+  color: #D9428A;
+}
+
+.pink:hover, .pink:focus {
+  background: #ffeaf591;
+  color: #d9428b9d;
+}
+
+.lighter-blue {
+  background: #E7F6FF;
+  color: #1A88E1;
+}
+
+.lighter-blue:hover, .lighter-blue:focus {
+  background: #e7f6ff94;
+  color: #1a87e18c;
+}
+
+.green {
+  background: #DCFFEB;
+  color: #2DB165;
+}
+
+.green:hover, .green:focus {
+  background: #dcffeb8f;
+  color: #2db1649a;
+}
+
+.grey {
+  background: #EFF4F5;
+  color: #3C3D3D;
+}
+
+.grey:hover, .grey:focus {
+  background: #eff4f58e;
+  color: #3c3d3d8e;
+}
+
+/* BOTTOM GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.inputs-1 {
+  display: flex;
+  align-items: center;
+}
+
+.sm-input {
+  width: 80px;
+  height: 30px;
+  border: 1px solid rgba(140, 140, 140, 0.5);
+  border-radius: 10px 10px 10px 0px;
+}
+
+.lg-input {
+  width: 390px;
+  height: 58px;
+  border: 1px solid rgba(140, 140, 140, 0.5);
+  border-radius: 10px 10px 10px 0px;
+}
+
+.calculate-btn {
+  width: 390px;
+  height: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  background: #045CD3;
+  color: white;
+  border: 1px solid rgba(140, 140, 140, 0.5);
+  border-radius: 10px 10px 10px 0px;
+}
+
+.col-1 {
+  display: grid;
+  align-content: space-between;
+}
+
+.col-2 {
+  margin-left: auto;
+  margin-top: 15px;
+}
+
+.col-2 ul {
+  width: 85%;
+  margin: 0;
+}
+
+.col-2 p {
+  font-size: 12px;
+  font-weight: bold;
+  color: black;
+  margin-top: 6px;
+}
+
+.col-2 section:nth-child(3) {
+  margin-top: auto;
+}
+
+.responsive-image {
+  width: 70%;
+}
+
+.responsive-image > img{
+  width: 100%;
+}

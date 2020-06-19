@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap" rel="stylesheet">
+  <title>Piggy Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <aside class="aside">
+      <div class="top">
+        <img class="icon" src="icons/hamburger.png" alt="menu">
+        <img class="temp logo" src="icons/logo.png" alt="logo">
+      </div>
+      <ul class="links">
+        <li>
+          <a href="#"><img class="icon" src="icons/home.png" alt="home icon"><span class="temp">Home</span></a>
+        </li>
+        <li>
+          <a href="#"><img class="icon" src="icons/target.png" alt="savings icon"><span class="temp">Savings</span></a>
+        </li>
+        <li>
+          <a href="#"><img class="icon" src="icons/jet.png" alt="invest icon"><span class="temp">Invest</span></a>
+        </li>
+        <li>
+          <a href="#"><img class="icon" src="icons/profile-icon.png" alt="profile icon"><span class="temp">Account</span></a>
+        </li>
+        <li>
+          <a href="#"><img class="icon" src="icons/calculator.png" alt="calculator icon"><span class="temp current">Piggy Calculator</span></a>
+        </li>
+      </ul>
+      <a class="logout" href="#"><img class="icon" src="icons/power-off.png" alt="logout icon"> <span class="temp">Logout</span></a>
+    </aside>
+    <main class="main-section">
+      <header>
+        <div class="header-content">
+          <h1><span>Piggy Calculator</span></h1> <a href="#"><img style="width: 50px;" src="icons/clean.png" alt="clean-icon"></a>
+          <p>Let’s see your cash can rack up.</p>
+        </div>
+        <div class="amount-box">
+          <p>Total amount</p>
+          <h1><img src="icons/naira.png" alt=""><span class="amount">0.00</span></h1>
+        </div>
+      </header>
+      <main class="bottom-section">
+        <section>
+          <p>Select savings type</p>
+          <ul class="btn-list">
+            <li><button class="btn blue"><img src="icons/shield.png" alt=""> PiggyBank</button></li>
+            <li><button class="btn pink"><img src="icons/flex.png" alt=""> Flex Naira</button></li>
+            <li><button class="btn lighter-blue"><img src="icons/lock.png" alt=""> Safelock</button></li>
+            <li><button class="btn green"><img src="icons/target-sm.png" alt=""> Targets</button></li>
+            <li><button class="btn grey"><img src="icons/dollar.png" alt=""> Flex dollar</button></li>
+          </ul>
+        </section>
+        <div class="grid">
+          <div class="col-1">
+            <section>
+              <p>Or enter % return in months (e.g 20% in 12 months)</p>
+              <div class="inputs-1">
+                <input class="sm-input rate" type="number" readonly>
+                <p>%</p>
+                <p>in</p>
+                <input class="sm-input months" type="number">
+                <p>m</p>
+              </div>
+            </section>
+            <section>
+              <p>Tap here and enter an amount.. (e.g 5000)</p>
+              <input class="lg-input principal" type="number">
+            </section>
+            <section>
+              <p>Tap here and enter for how long.. (e.g 22 months)</p>
+              <input class="lg-input months-2" type="number">
+            </section>
+            <button class="calculate-btn">
+              CALCULATE
+            </button>
+          </div>
+          <div class="col-2">
+            <section>
+              <p>WATCH THE LAST OPEN HOUSE</p>
+              <div class="responsive-image"><img src="images/image 4.png" alt=""></div>
+            </section>
+            <section>
+              <p>DOWNLOAD THE MOBILE APP</p>
+              <ul>
+                <li><div class="responsive-image"><img src="images/image 2.png" alt=""></div></li>
+                <li><div class="responsive-image"><img src="images/image 3.png" alt=""></div></li>
+              </ul>
+            </section>
+            <section>
+              <p>REFER AND EARN</p>
+              <div class="responsive-image"><img src="images/image 5.png" alt=""></div>
+            </section>
+          </div>
+        </div>
+      </main>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
